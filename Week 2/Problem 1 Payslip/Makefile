@@ -7,7 +7,7 @@ SRC = payslip.cpp
 # Default target: compile the program
 all: $(TARGET)
 
-# Compile the fibonacci.cpp
+# Compile the payslip.cpp
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
