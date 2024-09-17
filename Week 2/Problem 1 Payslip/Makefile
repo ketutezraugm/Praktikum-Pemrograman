@@ -1,8 +1,8 @@
 # Variables
 CXX = g++
 CXXFLAGS = -Wall
-TARGET = code
-SRC = code.cpp
+TARGET = payslip
+SRC = payslip.cpp
 
 # Default target: compile the program
 all: $(TARGET)
