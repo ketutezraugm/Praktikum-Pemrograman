@@ -1,7 +1,9 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
-int main() {
+string payslip(int n) {
     // header
     cout << "Payslip for Employee";
     cout << "\n----------------------";
@@ -10,8 +12,8 @@ int main() {
     char name[20];
     int sal;
     double tax = 0.2;
-    int instal = 165000;
-    int insur = 78000;
+    int instal = 200000;
+    int insur = 150000;
     
     // input name
     cout << "\nName: ";
@@ -30,6 +32,32 @@ int main() {
     cout << "\nInstallment: Rp" << instal;
     cout << "\nInsurance: Rp" << insur;
     cout << "\nNet Salary: Rp" << net;
+    
+    return 0;
+}
 
+int main() {
+    ifstream testFile("payslip.txt");
+    int input;
+    string expected_output;
+
+    if (!testFile) {
+        cerr << "Error: Could not open test.txt" << std::endl;
+        return 1;
+    }
+
+    int test_num = 1;
+    while (testFile >> input && getline(testFile >> ws, expected_output)) {
+        string output = payslip(input);
+        if (output == expected_output) {
+            cout << "Test " << test_num << " passed!" << endl;
+        } else {
+            cout << "Test " << test_num << " failed. Expected: \"" 
+                      << expected_output << "\", Got: \"" << output << "\"" << endl;
+        }
+        test_num++;
+    }
+
+    testFile.close();
     return 0;
 }
