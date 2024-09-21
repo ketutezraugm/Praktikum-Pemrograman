@@ -9,7 +9,7 @@ string payslip(int n) {
     cout << "\n----------------------";
     
     // variables
-    string name[20];
+    string name;
     int sal;
     double tax = 0.2;
     int instal = 200000;
