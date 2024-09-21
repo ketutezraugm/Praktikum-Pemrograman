@@ -1,23 +1,11 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall
-TARGET = equation
-SRC = equation.cpp
+main: equation.o
+	g++ equation.o -o equation
 
-# Default target: compile the program
-all: $(TARGET)
+main.o: equation.cpp
+	g++ -c equation.cpp -o equation.o
 
-# Compile the equation.cpp
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+run: equation
+	./equation
 
-# Run the program in test mode (using test.txt)
-test: $(TARGET)
-	./$(TARGET) test
-
-# Clean up the compiled files
 clean:
-	rm -f $(TARGET)
-
-# Phony targets to avoid conflicts
-.PHONY: all clean test
+	del equation.o equation.exe
