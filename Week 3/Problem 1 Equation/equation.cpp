@@ -12,7 +12,7 @@ int main() {
     cout << "\nEnter value of b : "; 
     cin >> b;
     cout << "\nEnter value of c : "; 
-    cin >> c; /
+    cin >> c; 
 
     // operations
     float disc = (b*b) - (4*a*c); 
