@@ -1,7 +1,7 @@
-main: sum.o
+sum: sum.o
 	g++ sum.o -o sum
 
-main.o: sum.cpp
+sum.o: sum.cpp
 	g++ -c sum.cpp -o sum.o
 
 run: sum
