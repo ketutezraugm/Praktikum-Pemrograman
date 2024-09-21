@@ -1,0 +1,21 @@
+Input : a = 2; b = 5; c = 3
+Output : 
+Enter value of a : 2
+Enter value of b: 5
+Enter value of c : 3
+The first root is -1
+The second root is -1.5
+
+Input : a = 3; b = 6; c = 3
+Output : 
+Enter value of a : 3
+Enter value of b: 6
+Enter value of c : 3
+The root is -1
+
+Input : a = 3; b = 5; c = 4
+Output : 
+Enter value of a : 3
+Enter value of b : 5
+Enter value of c : 4
+There are no real roots (the roots are complex)
