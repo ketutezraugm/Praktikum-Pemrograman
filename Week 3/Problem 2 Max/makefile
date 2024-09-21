@@ -1,23 +1,11 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall
-TARGET = max
-SRC = max.cpp
+main: max.o
+	g++ max.o -o max
 
-# Default target: compile the program
-all: $(TARGET)
+main.o: max.cpp
+	g++ -c max.cpp -o max.o
 
-# Compile the max.cpp
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+run: max
+	./max
 
-# Run the program in test mode (using test.txt)
-test: $(TARGET)
-	./$(TARGET) test
-
-# Clean up the compiled files
 clean:
-	rm -f $(TARGET)
-
-# Phony targets to avoid conflicts
-.PHONY: all clean test
+	del max.o max.exe
