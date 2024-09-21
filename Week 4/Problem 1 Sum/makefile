@@ -1,23 +1,11 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall
-TARGET = sum
-SRC = sum.cpp
+main: sum.o
+	g++ sum.o -o sum
 
-# Default target: compile the program
-all: $(TARGET)
+main.o: sum.cpp
+	g++ -c sum.cpp -o sum.o
 
-# Compile the sum.cpp
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+run: sum
+	./sum
 
-# Run the program in test mode (using test.txt)
-test: $(TARGET)
-	./$(TARGET) test
-
-# Clean up the compiled files
 clean:
-	rm -f $(TARGET)
-
-# Phony targets to avoid conflicts
-.PHONY: all clean test
+	del sum.o sum.exe
