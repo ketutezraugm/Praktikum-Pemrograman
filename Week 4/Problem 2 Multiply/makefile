@@ -1,23 +1,11 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall
-TARGET = multiply
-SRC = multiply.cpp
+multiply: multiply.o
+	g++ multiply.o -o multiply
 
-# Default target: compile the program
-all: $(TARGET)
+multiply.o: multiply.cpp
+	g++ -c multiply.cpp -o multiply.o
 
-# Compile the multiply.cpp
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+run: multiply
+	./multiply
 
-# Run the program in test mode (using test.txt)
-test: $(TARGET)
-	./$(TARGET) test
-
-# Clean up the compiled files
 clean:
-	rm -f $(TARGET)
-
-# Phony targets to avoid conflicts
-.PHONY: all clean test
+	del multiply.o multiply.exe
