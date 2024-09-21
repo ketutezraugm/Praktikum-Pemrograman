@@ -1,10 +1,21 @@
-Input : 
+Input : num={5,6,9}
 Output : 
+Enter a number : 5
+Enter a number : 6
+Enter a number : 9
+The largest number is : 9
 
-
-Input : 
+Input : num={598,321,548}
 Output : 
+Enter a number : 598
+Enter a number : 321
+Enter a number : 548
+The largest number is : 598
 
 
-Input : 
+Input : num={4618,4768,3549}
 Output : 
+Enter a number: 4618
+Enter a number : 4768
+Enter a number : 3549
+The largest number is: 4768
