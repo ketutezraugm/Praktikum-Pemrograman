@@ -1,7 +1,7 @@
-main: equation.o
+equation: equation.o
 	g++ equation.o -o equation
 
-main.o: equation.cpp
+equation.o: equation.cpp
 	g++ -c equation.cpp -o equation.o
 
 run: equation
