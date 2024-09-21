@@ -7,8 +7,8 @@ int main() {
     
     // input
     for (i=0; i < 3; i++) {
-    cout << "Enter a number : "; 
-    cin >> num; 
+        cout << "Enter a number : "; 
+        cin >> num; 
     
     if (num > high) {
         high = num; 
