@@ -1,7 +1,7 @@
-main: max.o
+max: max.o
 	g++ max.o -o max
 
-main.o: max.cpp
+max.o: max.cpp
 	g++ -c max.cpp -o max.o
 
 run: max
