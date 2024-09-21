@@ -1,7 +1,7 @@
-main: payslip.o
+payslip: payslip.o
 	g++ payslip.o -o payslip
 
-main.o: payslip.cpp
+payslip.o: payslip.cpp
 	g++ -c payslip.cpp -o payslip.o
 
 run: payslip
