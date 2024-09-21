@@ -1,0 +1,14 @@
+Input : n=8
+Output : 
+Enter a number: 8
+Sum = 36
+
+Input : n=54
+Output : 
+Enter a number: 54
+Sum = 1485
+
+Input : n=162
+Output : 
+Enter a number: 162
+Sum = 13203
