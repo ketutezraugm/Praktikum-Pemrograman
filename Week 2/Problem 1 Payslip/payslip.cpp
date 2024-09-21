@@ -1,9 +1,8 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
-string payslip(int n) {
+int main() {
     // header
     cout << "Payslip for Employee";
     cout << "\n----------------------";
@@ -33,31 +32,5 @@ string payslip(int n) {
     cout << "\nInsurance: Rp" << insur;
     cout << "\nNet Salary: Rp" << net;
     
-    return 0;
-}
-
-int main() {
-    ifstream testFile("payslip.txt");
-    int input;
-    string expected_output;
-
-    if (!testFile) {
-        cerr << "Error: Could not open test.txt" << std::endl;
-        return 1;
-    }
-
-    int test_num = 1;
-    while (testFile >> input && getline(testFile >> ws, expected_output)) {
-        string output = payslip(input);
-        if (output == expected_output) {
-            cout << "Test " << test_num << " passed!" << endl;
-        } else {
-            cout << "Test " << test_num << " failed. Expected: \"" 
-                      << expected_output << "\", Got: \"" << output << "\"" << endl;
-        }
-        test_num++;
-    }
-
-    testFile.close();
     return 0;
 }
