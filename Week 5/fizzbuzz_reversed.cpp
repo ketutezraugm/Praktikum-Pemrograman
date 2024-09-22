@@ -32,7 +32,7 @@ int main() {
     }
     cout << endl;
     
-    // reversed array
+    // reversed vector
     // size of the vector
     size = vector.size();
     
