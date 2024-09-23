@@ -1,32 +1,32 @@
-Input : name = "Ezra"; sal = 25000000
+Input : name = "Ezra"; sal = 10000000
 Output : 
 Payslip for Employee
 ----------------------
 Name: Ezra
-Gross Salary: Rp25000000 
-Tax (20%): Rp5000000
+Gross Salary: Rp10000000 
+Tax (20%): Rp2000000
 Installment: Rp200000 
 Insurance: Rp150000
-Net Salary: Rp19650000
+Net Salary: Rp7650000
 
-Input : name = "Dinda"; sal = 126000000
-Output : 
-Payslip for Employee
-----------------------
-Name: Dinda
-Gross Salary: Rp126000000 
-Tax (20%): Rp25200000 
-Installment: Rp1000000
-Insurance: Rp850000
-Net Salary: Rp98950000
-
-Input : name = "Tono"; sal = 1250000 
+Input : name = "Tono"; sal = 500000
 Output : 
 Payslip for Employee
 ----------------------
 Name: Tono
 Gross Salary: Rp1250000 
 Tax (20%): Rp250000 
-Installment: Rp165000 
-Insurance: Rp78000
-Net Salary: Rp757000
+Installment: Rp350000 
+Insurance: Rp200000
+Net Salary: Rp-150000
+
+Input : name = "Dinda"; sal = 500000
+Output : 
+Payslip for Employee
+----------------------
+Name: Dinda
+Gross Salary: Rp250000000
+Tax (20%): Rp50000000
+Installment: Rp500000
+Insurance: Rp250000
+Net Salary: Rp199250000
