@@ -11,9 +11,8 @@ int main() {
         cin >> num; 
     
     // check
-    if (num > high) {
+    if (num > high) 
         high = num; 
-    }
     }
     
     // output
