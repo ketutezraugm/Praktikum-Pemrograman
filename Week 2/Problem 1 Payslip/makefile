@@ -25,6 +25,3 @@ clean:
 test: $(TARGET)
 	./$(TARGET) > output.txt
 	diff output.txt expected_output.txt
-
-# Phony targets to avoid conflicts with files of the same name
-.PHONY: all run clean test
