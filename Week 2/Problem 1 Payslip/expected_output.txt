@@ -1,0 +1,8 @@
+Payslip for Employee
+----------------------
+Name: Ezra
+Gross Salary: Rp10000000
+Tax (20%): Rp2000000
+Installment: Rp200000
+Insurance: Rp150000
+Net Salary: Rp7650000
