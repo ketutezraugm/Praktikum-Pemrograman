@@ -1,11 +1,30 @@
-payslip: payslip.o
-	g++ payslip.o -o payslip
+# Compiler and flags
+CXX = g++
+CXXFLAGS = -Wall -std=c++11
 
-payslip.o: payslip.cpp
-	g++ -c payslip.cpp -o payslip.o
+# Source file and output executable
+SRC = payslip.cpp
+TARGET = payslip
 
-run: payslip
-	./payslip
+# Default target: Compile the program
+all: $(TARGET)
 
+# Compile the program
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# Run the program
+run: $(TARGET)
+	./$(TARGET)
+
+# Clean: Remove the compiled executable
 clean:
-	del payslip.o payslip.exe
+	rm -f $(TARGET)
+
+# Test: Run the program and compare output to expected output
+test: $(TARGET)
+	./$(TARGET) > output.txt
+	diff output.txt expected_output.txt
+
+# Phony targets to avoid conflicts with files of the same name
+.PHONY: all run clean test
