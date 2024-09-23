@@ -1,11 +1,27 @@
-equation: equation.o
-	g++ equation.o -o equation
+# Compiler and flags
+CXX = g++
+CXXFLAGS = -Wall -std=c++11
 
-equation.o: equation.cpp
-	g++ -c equation.cpp -o equation.o
+# Source file and output executable
+SRC = equation.cpp
+TARGET = equation
 
-run: equation
-	./equation
+# Default target: Compile the program
+all: $(TARGET)
 
+# Compile the program
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# Run the program
+run: $(TARGET)
+	./$(TARGET)
+
+# Clean: Remove the compiled executable
 clean:
-	del equation.o equation.exe
+	rm -f $(TARGET)
+
+# Test: Run the program and compare output to expected output
+test: $(TARGET)
+	./$(TARGET) > output.txt
+	diff output.txt expected_output.txt
