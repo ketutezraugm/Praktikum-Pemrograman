@@ -1,0 +1,5 @@
+Enter value of a : 2
+Enter value of b: 5
+Enter value of c : 3
+The first root is -1
+The second root is -1.5
