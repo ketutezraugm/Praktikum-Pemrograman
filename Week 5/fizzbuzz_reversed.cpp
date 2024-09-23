@@ -13,7 +13,7 @@ int main() {
     for (i=1; i<=100;) {
         for (j=0; j<10; j++) {
             // print fizzbuzz
-            if (i%3==0 and i%5==0) {
+            if (i%3==0 && i%5==0) {
                 vector.push_back(i);
                 cout << "FizzBuzz ";
             }
