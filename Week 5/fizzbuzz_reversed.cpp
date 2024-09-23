@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     // variables
     int i,j;
-    int size,arr;
+    int size;
     vector<int> vector;
     
     // fizzbuzz
