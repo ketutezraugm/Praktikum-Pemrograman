@@ -1,11 +1,27 @@
-max: max.o
-	g++ max.o -o max
+# Compiler and flags
+CXX = g++
+CXXFLAGS = -Wall -std=c++11
 
-max.o: max.cpp
-	g++ -c max.cpp -o max.o
+# Source file and output executable
+SRC = equation.cpp
+TARGET = equation
 
-run: max
-	./max
+# Default target: Compile the program
+all: $(TARGET)
 
+# Compile the program
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# Run the program
+run: $(TARGET)
+	./$(TARGET)
+
+# Clean: Remove the compiled executable
 clean:
-	del max.o max.exe
+	rm -f $(TARGET)
+
+# Test: Run the program and compare output to expected output
+test: $(TARGET)
+	./$(TARGET) > output.txt
+	diff output.txt expected_output.txt
