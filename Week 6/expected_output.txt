@@ -1,0 +1,22 @@
+Enter the number of students: 3
+
+Enter the NIM: 156
+Enter UTS Value: 90
+Enter the UAS Value: 74
+----------------------------------
+NIM: 156
+Average: 82
+
+Enter the NIM: 559
+Enter UTS Value: 48
+Enter the UAS Value: 95
+----------------------------------
+NIM: 559
+Average: 71
+
+Enter the NIM: 456
+Enter UTS Value: 65
+Enter the UAS Value: 33
+----------------------------------
+NIM: 456
+Average: 49
