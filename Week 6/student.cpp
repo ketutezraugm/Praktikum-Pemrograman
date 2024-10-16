@@ -7,7 +7,7 @@ struct data {
 
 int main() {
     // variables
-    int i,N,avg;
+    int N,avg;
     struct data student[50];
     
     // input N
@@ -15,7 +15,7 @@ int main() {
     cin >> N;
     
     if (N<=50) {
-        for (i=0; i<N; i++) { 
+        for (int i=0; i<N; i++) { 
         //input data
         cout << "\nEnter the NIM: ";
         cin >> student[i].nim;
