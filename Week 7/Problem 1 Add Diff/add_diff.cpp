@@ -12,7 +12,7 @@ void diff(int a,int b) {
 
 int main() {
     // variables
-    int a,b,c;
+    int a,b;
     string op;
     
     // inputs
