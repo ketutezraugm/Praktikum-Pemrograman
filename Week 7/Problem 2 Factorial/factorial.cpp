@@ -2,12 +2,10 @@
 using namespace std;
 
 int factorial(int x) {
-    int c = 1;
-    
-    for (int i=2; i<=x; i++) {
-        c = c*i;
-    }
-    return c;
+    if (x==0 || x==1)
+        return 1;
+    else
+        return x*factorial((x-1));
 }
 
 int main() {
