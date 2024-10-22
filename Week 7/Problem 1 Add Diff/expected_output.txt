@@ -1,10 +1,4 @@
-Enter a number: 9
-Enter a number: 15
-Select the operation (+/-): +
-9 + 15 = 24
-
 Enter a number: 156
 Enter a number: 37
 Select the operation (+/-): -
 156 - 37 = 119
-
