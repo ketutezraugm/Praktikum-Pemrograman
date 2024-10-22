@@ -11,15 +11,14 @@ int factorial(int x) {
 }
 
 int main() {
-    // variables
+    // variable
     int x;
     
-    // inputs
+    // input
     cout << "Enter a number: ";
     cin >> x;
     
-    // process
-    factorial(x);
+    // output
     cout << x << "! = " << factorial(x);
     
     return 0;
