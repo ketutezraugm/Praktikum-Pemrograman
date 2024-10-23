@@ -1,0 +1,3 @@
+Enter a number: 36
+Enter a number: 42
+The Greater Common Division of (36, 42) is 6
