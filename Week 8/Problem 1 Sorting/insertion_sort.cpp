@@ -33,13 +33,14 @@ int main() {
         {9952382180, "Ari Lutfianto", 65},
         {9965653989, "Arief Budiman", 60}
     };
+    int datasize = students.size();
     
     // process
     insertion_sort(students);
     
     // output
     cout << "NISN Insertion Sort (Descending):\n";
-    for (int i = 0; i < students.size(); i++) {
+    for (int i = 0; i < datasize; i++) {
         cout << students[i].NISN << ", " << students[i].name << ", " << students[i].value << endl;
     }
 
