@@ -12,14 +12,14 @@ struct student {
 
 void selection_sort_NISN(vector<student> &students) {
     int datasize = students.size();
-    for (int i = 0; i < datasize - 1; i++) {
+    for (int i=0; i<datasize-1; i++) {
         int min = i;
-        for (int j = i + 1; j < datasize; j++) {
+        for (int j=i+1; j<datasize; j++) {
             if (students[j].NISN > students[min].NISN) {
                 min = j;
             }
         }
-        if (min != i) {
+        if (min!=i) {
             swap(students[i], students[min]);
         }
     }
@@ -27,18 +27,19 @@ void selection_sort_NISN(vector<student> &students) {
 
 void selection_sort_value(vector<student> &students) {
     int datasize = students.size();
-    for (int i = 0; i < datasize - 1; i++) {
+    for (int i=0; i<datasize-1; i++) {
         int min = i;
-        for (int j = i + 1; j < datasize; j++) {
+        for (int j=i+1; j<datasize; j++) {
             if (students[j].value > students[min].value) {
                 min = j;
             }
         }
-        if (min != i) {
+        if (min!=i) {
             swap(students[i], students[min]);
         }
     }
 }
+
 
 int main() {
     // variables
@@ -56,14 +57,14 @@ int main() {
     // sorted based on NISN
     selection_sort_NISN(students);
     cout << "NISN Selection Sort (Descending): " << endl;
-    for (int i = 0; i < datasize; i++) {
+    for (int i=0; i<datasize; i++) {
         cout << students[i].NISN << ", " << students[i].name << ", " << students[i].value << endl;
     }
 
     // sorted based on value
     selection_sort_value(students);
     cout << "\nValue Selection Sort (Descending): " << endl;
-    for (int i = 0; i < datasize; i++) {
+    for (int i=0; i<datasize; i++) {
         cout << students[i].NISN << ", " << students[i].name << ", " << students[i].value << endl;
     }
 
