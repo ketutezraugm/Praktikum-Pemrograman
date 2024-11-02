@@ -12,27 +12,27 @@ struct student {
 
 void insertion_sort_NISN(vector<student> &students) {
     int datasize = students.size();
-    for (int j=1; j<datasize; j++) {
+    for (int j = 1; j < datasize; j++) {
         student temp = students[j];
-        int i = j-1;
-        while (i>=0 && students[i].NISN<temp.NISN) {
-            students[i+1] = students[i];
+        int i = j - 1;
+        while (i >= 0 && students[i].NISN < temp.NISN) {
+            students[i + 1] = students[i];
             i--;
         }
-        students[i+1] = temp;
+        students[i + 1] = temp;
     }
 }
 
 void insertion_sort_value(vector<student> &students) {
     int datasize = students.size();
-    for (int j=1; j<datasize; j++) {
+    for (int j = 1; j < datasize; j++) {
         student temp = students[j];
-        int i = j-1;
-        while (i>=0 && students[i].value<temp.value) {
-            students[i+1] = students[i];
+        int i = j - 1;
+        while (i >= 0 && students[i].value < temp.value) {
+            students[i + 1] = students[i];
             i--;
         }
-        students[i+1] = temp;
+        students[i + 1] = temp;
     }
 }
 
@@ -52,14 +52,14 @@ int main() {
     // sorted based on NISN
     insertion_sort_NISN(students);
     cout << "NISN Insertion Sort (Descending): " << endl;
-    for (int i=0; i<datasize; i++) {
+    for (int i = 0; i < datasize; i++) {
         cout << students[i].NISN << ", " << students[i].name << ", " << students[i].value << endl;
     }
 
     // sorted based on value
     insertion_sort_value(students);
     cout << "\nValue Insertion Sort (Descending): " << endl;
-    for (int i=0; i<datasize; i++) {
+    for (int i = 0; i < datasize; i++) {
         cout << students[i].NISN << ", " << students[i].name << ", " << students[i].value << endl;
     }
 
