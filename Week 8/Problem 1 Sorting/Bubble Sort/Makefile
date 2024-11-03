@@ -11,6 +11,10 @@ all: $(TARGET)
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
+# Run the program
+run: $(TARGET)
+	./$(TARGET)
+
 # Run the program in test mode (using test.txt)
 test: $(TARGET)
 	./$(TARGET) test
